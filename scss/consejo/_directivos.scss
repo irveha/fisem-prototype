@@ -1,0 +1,20 @@
+.consejo {
+	text-align: center;
+
+	.titulo {
+		color: #000;
+		display: inline-block;
+		border-bottom: 6px solid #d0a4eb;
+	}
+
+	.fundadores {
+		color: $morado;
+	}
+	.integrante {
+		text-align: center;
+		img {
+			width: 50%;
+			border-radius: 50%;
+		}
+	}
+}

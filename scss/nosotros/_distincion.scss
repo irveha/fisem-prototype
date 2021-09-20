@@ -1,0 +1,130 @@
+$morado: #9682dc;
+$texto: calc(1em + 1vw);
+
+.distincion-titulo {
+	margin-bottom: 100px;
+	color: $morado;
+	// text-align: center;
+	align-content: center;
+	align-items: center;
+	.titulo {
+		font-size: calc(4em + 2vw);
+		// text-align: start;
+		padding-left: 30%;
+	}
+	.imagen {
+		text-align: center;
+		img {
+			width: calc(10em + 30vw);
+		}
+	}
+}
+
+.nuestra-distincion {
+	// width: 70% !important;
+	height: 300px;
+	margin: auto;
+	margin-bottom: 50px;
+	display: grid;
+	grid-template-columns: 4% 23% 23% 23% 23% 4%;
+	grid-template-rows: 30% 30% 30%;
+	background: #fba591;
+	border-radius: 40px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+	h3 {
+		color: $morado;
+		text-align: center;
+		padding: 1%;
+	}
+
+	p {
+		padding: 3%;
+		font-size: calc(1em + 0.5vw);
+	}
+	.nuestra-distincion1 {
+		grid-column-start: 2;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		align-self: center;
+		color: #fff;
+	}
+
+	.nuestra-distincion2 {
+		grid-column-start: 4;
+		grid-column-end: 6;
+		height: 210px;
+		margin-top: -50px;
+		background: #fff;
+		border-radius: 30px;
+		box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	}
+	.nuestra-distincion3 {
+		grid-column-start: 3;
+		grid-column-end: 5;
+		grid-row-start: 3;
+		height: 210px;
+		background: #fff;
+		border-radius: 30px;
+		box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	}
+}
+
+@media (max-width: 990px) {
+	.distincion-titulo {
+		margin-bottom: 50px;
+		.titulo {
+			text-align: center;
+			padding-left: 0;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.distincion-titulo {
+		.titulo {
+			font-size: calc(3em + 1vw);
+		}
+	}
+	.nuestra-distincion {
+		height: 650px;
+		margin: 0 !important;
+		grid-template-columns: 2% 96% 2%;
+		grid-template-rows: 5% 10% 5% 35% 5% 35% 5%;
+
+		h3 {
+			color: $morado;
+			text-align: center;
+			padding: 1%;
+		}
+
+		p {
+			padding: 3%;
+			font-size: calc(1em + 1vw);
+		}
+		.nuestra-distincion1 {
+			grid-column: 2;
+			grid-row: 2;
+			text-align: center;
+			color: #fff;
+		}
+
+		.nuestra-distincion2 {
+			padding: auto 0;
+			grid-row: 4;
+			grid-column: 2;
+			height: auto;
+			margin: 0;
+			background: #fff;
+			border-radius: 30px;
+			box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+		}
+		.nuestra-distincion3 {
+			grid-row: 6;
+			grid-column: 2;
+			height: auto;
+			background: #fff;
+			border-radius: 30px;
+			box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+		}
+	}
+}

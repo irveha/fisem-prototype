@@ -1,0 +1,22 @@
+@import './generales/header';
+@import './generales/menu';
+@import './generales/portada';
+@import './generales/footer';
+
+@import './nosotros/somos';
+@import './nosotros/mision';
+@import './nosotros/compromiso';
+@import './nosotros/distincion';
+@import './nosotros/programas';
+@import './nosotros/equipo';
+@import './nosotros/slider';
+
+@import './consejo/directivos';
+
+* {
+	font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+}
+
+html {
+	background: chartreuse;
+}

@@ -1,0 +1,75 @@
+.footer {
+	height: 500px;
+	background: url('../../assets/footer.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: calc(0.5em + 0.5vw);
+
+	.grid-footer {
+		margin: 0 auto;
+
+		padding-top: 100px;
+		display: grid;
+		grid-template-columns: 30% 40% 30%;
+		grid-template-rows: 60% 40%;
+
+		.fisem {
+			grid-area: 1/1;
+			.logo {
+				width: 60px;
+				height: 60px;
+			}
+		}
+		.ayuda {
+			grid-area: 1/3;
+			align-self: flex-end;
+		}
+		.contactanos {
+			grid-area: 2/2;
+			text-align: center;
+			.address {
+				color: #8776c7;
+			}
+			.facebook {
+				color: #9fdfd3;
+			}
+
+			.twitter {
+				color: #b9abc9;
+			}
+
+			.instagram {
+				color: #fe6767;
+			}
+
+			.youtube {
+				color: #ffde59;
+			}
+			.linkedin {
+				color: #eeb1c7;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.footer {
+		.grid-footer {
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: 35% 35% 20%;
+			gap: 10%;
+			align-items: center;
+			.fisem {
+				grid-area: 1/1;
+			}
+			.ayuda {
+				grid-area: 2/1;
+				align-self: flex-end;
+			}
+			.contactanos {
+				grid-area: 3/1;
+			}
+		}
+	}
+}

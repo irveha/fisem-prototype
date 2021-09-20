@@ -1,0 +1,151 @@
+$fs-titles: 25px;
+
+// header {
+// 	.menu1 {
+// 		padding-top: 2px;
+// 		display: flex;
+// 		justify-content: space-evenly;
+// 		flex-direction: row;
+// 		flex-wrap: nowrap;
+// 		align-items: baseline;
+// 		.logo {
+// 			text-align: -webkit-center;
+// 			width: 10%;
+// 			.logo-circulo {
+// 				display: block;
+// 				width: 80px;
+// 				height: 80px;
+// 				text-align: center;
+// 				align-content: center;
+// 				align-items: center;
+// 				border-radius: 50%;
+// 				border-left: solid 5px #95d2c7;
+// 				border-right: solid 5px #8776c7;
+// 				border-top: solid 5px #95d2c7;
+// 				border-bottom: solid 5px #8776c7;
+
+// 				transform: rotate(-45deg);
+// 				img {
+// 					max-width: 100%;
+// 					max-height: 100%;
+// 					transform: rotate(45deg);
+// 				}
+// 			}
+// 		}
+// 		.nombre {
+// 			width: 80%;
+// 			text-align: center;
+// 		}
+
+// 		.redes-sociales {
+// 			width: 15%;
+// 			display: flex;
+// 			flex-wrap: wrap;
+// 			align-items: center;
+// 			justify-content: space-around;
+
+// 			.facebook {
+// 				color: #9fdfd3;
+// 			}
+
+// 			.twitter {
+// 				color: #b9abc9;
+// 			}
+
+// 			.instagram {
+// 				color: #fe6767;
+// 			}
+
+// 			.youtube {
+// 				color: #ffde59;
+// 			}
+// 			.linkedin {
+// 				color: #eeb1c7;
+// 			}
+// 		}
+// 	}
+
+// 	.title {
+// 		font-size: $fs-titles;
+// 		text-align: center;
+// 		font-weight: 600;
+// 	}
+
+// 	.social-media {
+// 		width: 15%;
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 		align-items: center;
+// 		justify-content: space-around;
+
+// 		.facebook {
+// 			color: #9fdfd3;
+// 		}
+
+// 		.twitter {
+// 			color: #b9abc9;
+// 		}
+
+// 		.instagram {
+// 			color: #fe6767;
+// 		}
+
+// 		.youtube {
+// 			color: #ffde59;
+// 		}
+// 		.linkedin {
+// 			color: #eeb1c7;
+// 		}
+// 	}
+// }
+
+header {
+	.menu {
+		display: grid;
+		align-items: baseline;
+		grid-template-columns: 15% 70% 15%;
+		.logo {
+			width: 80px;
+			height: 80px;
+			justify-self: center;
+			grid-column: 1;
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+		.nombre {
+			grid-column: 2;
+			font-size: calc(1em + 1vw);
+			font-weight: normal;
+			text-align: center;
+		}
+
+		.redes-sociales {
+			grid-column: 3;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-around;
+
+			.facebook {
+				color: #9fdfd3;
+			}
+
+			.twitter {
+				color: #b9abc9;
+			}
+
+			.instagram {
+				color: #fe6767;
+			}
+
+			.youtube {
+				color: #ffde59;
+			}
+			.linkedin {
+				color: #eeb1c7;
+			}
+		}
+	}
+}

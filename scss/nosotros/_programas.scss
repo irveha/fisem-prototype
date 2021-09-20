@@ -1,0 +1,147 @@
+.prog-info {
+	font-size: calc(1em + 1vw);
+}
+
+.programas {
+	text-align: center;
+
+	padding: 0 auto;
+	display: grid;
+	justify-content: center;
+	grid-template-rows: 200px 200px;
+	grid-template-columns: 200px 200px 200px;
+	gap: 30px;
+
+	.square {
+		background: #fff;
+		border-radius: 20px;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: calc(0.9em + 0.5vw);
+	}
+	.square1 {
+		grid-column-start: 1;
+		&:hover {
+			margin: 0 0 -50% 0;
+			background: $morado;
+			transition: 1s;
+		}
+	}
+	.square2 {
+		grid-column-start: 2;
+		&:hover {
+			margin: 0 -50% 0 0;
+			background: $medalOne;
+			transition: 1s;
+		}
+	}
+	.square3 {
+		grid-column-start: 2;
+		&:hover {
+			margin: 0 0 0 -50%;
+			background: $medalTwo;
+			transition: 1s;
+		}
+	}
+	.square4 {
+		grid-column-start: 3;
+		&:hover {
+			margin: -50% 0 0 0;
+			background: $medalThree;
+			transition: 1s;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.prog-info {
+		background: rgba(255, 255, 255, 0.4);
+	}
+	.programas {
+		padding-top: 30px;
+		grid-template-columns: 125px 125px;
+		grid-template-rows: 125px 125px;
+		gap: 30px;
+
+		.square {
+			background: #fff;
+			border-radius: 20px;
+			box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+		}
+		.square1 {
+			grid-column: 1;
+			grid-row: 1;
+			&:hover {
+				margin: -15% -15% -15% -15%;
+				background: $morado;
+				transition: 1s;
+			}
+		}
+		.square2 {
+			grid-column: 2;
+			grid-row: 1;
+			&:hover {
+				margin: -15% -15% -15% -15%;
+				background: $medalOne;
+				transition: 1s;
+			}
+		}
+		.square3 {
+			grid-column: 1;
+			grid-row: 2;
+			&:hover {
+				margin: -15% -15% -15% -15%;
+				background: $medalTwo;
+				transition: 1s;
+			}
+		}
+		.square4 {
+			grid-column: 2;
+			grid-row: 2;
+			&:hover {
+				margin: -15% -15% -15% -15%;
+				background: $medalThree;
+				transition: 1s;
+			}
+		}
+	}
+}
+
+.fondo {
+	padding: 50px;
+	background-image: url('../../assets/2.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: contain;
+}
+
+@media (max-width: 320px) {
+	.fondo {
+		background-size: cover;
+	}
+	.programas {
+		padding-top: 30px;
+		grid-template-columns: 125px !important;
+		grid-template-rows: 125px 125px 125px 125px !important;
+		gap: 30px;
+
+		.square1 {
+			grid-column: 1;
+			grid-row: 1;
+		}
+		.square2 {
+			grid-column: 1;
+			grid-row: 2;
+		}
+		.square3 {
+			grid-column: 1;
+			grid-row: 3;
+		}
+		.square4 {
+			grid-column: 1;
+			grid-row: 4;
+		}
+	}
+}

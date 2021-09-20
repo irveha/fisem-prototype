@@ -1,0 +1,78 @@
+$blanco: #fff;
+
+.contenedor-img {
+	height: 824px;
+	padding-top: 450px;
+	background-image: url('../assets/2-2.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	.bienvenida {
+		width: 70%;
+		padding: 30px 0;
+		color: $blanco;
+		background: rgba(255, 222, 89, 0.63);
+	}
+}
+
+.portada-nosotros {
+	// Partada imagen
+	height: calc(5em + 80vh);
+	background-image: url('../../assets/3.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	//Titulo e intro
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+	grid-template-rows: 30% 30% 30%;
+	align-content: center;
+	align-items: center;
+	.intro-somos {
+		padding-left: 10%;
+		padding-right: 5%;
+		align-self: flex-start;
+		color: $blanco;
+		text-align: right;
+		font-size: calc(1.5em + 2vw);
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row: 1;
+	}
+	.titulo-nosotros {
+		grid-column-start: 2;
+		grid-row: 2;
+		align-self: center;
+		text-align: center;
+		// font-size: calc(0.8em + 1.1vw);
+		font-size: calc(0.9em + 1vw);
+	}
+}
+
+@media (max-width: 768px) {
+	.portada-nosotros {
+		.intro-somos,
+		.intro-somos-1 {
+			display: none;
+		}
+	}
+}
+
+.portada-consejo {
+	// Partada imagen
+	height: calc(5em + 80vh);
+	background-image: url('../../assets/nuestro\ equipo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	.iniciativa {
+		position: absolute;
+		bottom: 20%;
+		color: $blanco;
+		text-align: left;
+		font-size: calc(2.5em + 2vw);
+	}
+}
