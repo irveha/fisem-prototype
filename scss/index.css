@@ -106,7 +106,8 @@ header .menu .redes-sociales .linkedin {
 
 .contenedor-img {
   height: calc(5em + 80vh);
-  background-image: url("../assets/2-2.jpg");
+  padding-top: 25%;
+  background-image: url("./assets/2-2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
